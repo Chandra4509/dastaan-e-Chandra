@@ -119,3 +119,27 @@ h1 {
 h2 {
     margin-top: 15px; /* Space above subheadings */
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Adjust sidebar and content for smaller screens */
+    #sidebar {
+        width: 100%; /* Sidebar takes full width */
+        position: absolute; /* Position it absolutely for mobile */
+        left: -100%; /* Hide it off-screen */
+        z-index: 999; /* Ensure it is above other content */
+    }
+
+    #sidebar.show {
+        left: 0; /* Show sidebar when the class 'show' is added */
+    }
+
+    #content {
+        margin-left: 0; /* Remove left margin */
+        padding: 15px; /* Adjust padding for mobile */
+    }
+
+    #menu-button {
+        display: block; /* Show the menu button */
+    }
+}
