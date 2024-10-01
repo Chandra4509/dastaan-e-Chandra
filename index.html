@@ -3,44 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to My Website">
-    <meta name="keywords" content="stories, poems, art">
+    <meta name="description" content="Your Page Description">
+    <meta name="keywords" content="keywords, here">
     <meta name="author" content="Your Name">
-    <title>My Awesome Website</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Hamburger Menu Button -->
+    <div id="menu-button" onclick="toggleSidebar()">
+        &#9776; <!-- Unicode for hamburger icon -->
+    </div>
+
     <!-- Sidebar -->
     <div id="sidebar">
-    <h2>Categories</h2>
-    <ul>
-        <li><a href="index.html">Home</a></li> <!-- Link to Home Page -->
-        <li><a href="stories.html">Stories</a></li>
-        <li><a href="poems.html">Poems</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</div>
+        <h2>Categories</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li> <!-- Home link -->
+            <li><a href="stories.html">Stories</a></li>
+            <li><a href="poems.html">Poems</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
 
     <!-- Main Content -->
     <div id="content">
         <header>
-            <h1>Welcome to My Website</h1>
-            <p>Explore stories, poems, and more!</p>
+            <h1>Your Page Title</h1>
+            <p>Welcome to your page!</p>
         </header>
 
-        <!-- Animated Graphic Section -->
-        <section id="animated-graphic">
-            <div class="graphic-container">
-                <div class="graphic-element"></div>
-                <p>A cool animation here!</p>
-            </div>
+        <section>
+            <p>This is where you put your main content.</p>
+            <p>Add more content here as needed.</p>
         </section>
 
-        <!-- Other Sections Can Be Added Here -->
+        <!-- Home and Back Buttons -->
+        <div class="button-container">
+            <a href="index.html" class="button">Home</a> <!-- Home Button -->
+            <button onclick="history.back()" class="button">Go Back</button> <!-- Back Button -->
+        </div>
     </div>
 
-    <!-- External Script for Animations -->
-    <script src="animations.js"></script>
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById('sidebar');
+            if (sidebar.style.display === "none") {
+                sidebar.style.display = "block"; // Show sidebar
+            } else {
+                sidebar.style.display = "none"; // Hide sidebar
+            }
+        }
+    </script>
 </body>
 </html>
