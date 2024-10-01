@@ -64,8 +64,14 @@ body {
 
 /* Main content styling */
 #content {
-    margin-left: 220px; /* Space for sidebar */
     padding: 20px; /* Padding for content */
+    transition: margin-left 0.3s ease; /* Smooth transition for content area */
+    margin-left: 200px; /* Space for sidebar when visible */
+}
+
+/* Hide content margin when sidebar is hidden */
+#sidebar[style*="display: none"] ~ #content {
+    margin-left: 0; /* Remove margin when sidebar is hidden */
 }
 
 /* Header styling */
