@@ -12,6 +12,19 @@ body {
     color: #333; /* Dark text color */
 }
 
+/* Hamburger Menu Button */
+#menu-button {
+    font-size: 30px; /* Font size for the menu icon */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border: none; /* Remove borders */
+    border-radius: 5px; /* Rounded corners */
+    position: fixed; /* Fixed position at top left */
+    z-index: 1000; /* On top of other elements */
+}
+
 /* Sidebar styling */
 #sidebar {
     width: 200px; /* Width of the sidebar */
@@ -19,6 +32,12 @@ body {
     background-color: #fff; /* White background for the sidebar */
     padding: 15px; /* Padding for sidebar */
     border-right: 2px solid #ccc; /* Border on the right */
+    transition: all 0.3s ease; /* Smooth transition for sidebar */
+}
+
+/* Hide sidebar by default */
+#sidebar[style*="display: none"] {
+    display: none; /* Hide the sidebar */
 }
 
 /* Sidebar headings and links */
