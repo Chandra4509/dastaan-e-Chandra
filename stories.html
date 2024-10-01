@@ -10,26 +10,44 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Sidebar -->
     <div id="sidebar">
-    <h2>Categories</h2>
-    <ul>
-        <li><a href="index.html">Home</a></li> <!-- Link to Home Page -->
-        <li><a href="stories.html">Stories</a></li>
-        <li><a href="poems.html">Poems</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</div>
+        <h2>Categories</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li> <!-- Home link -->
+            <li><a href="stories.html">Stories</a></li>
+            <li><a href="poems.html">Poems</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
 
+    <!-- Main Content -->
     <div id="content">
         <header>
             <h1>Stories</h1>
-            <p>Explore our collection of stories.</p>
+            <p>A collection of our favorite stories.</p>
         </header>
-        <!-- Add your stories content here -->
 
-                <!-- Back Button -->
-        <button onclick="history.back()">Go Back</button> <!-- Back to Previous Page Button -->
+        <section>
+            <h2>Story 1: The Adventure</h2>
+            <p>
+                Once upon a time in a land far away, there lived a brave knight who...
+            </p>
+
+            <h2>Story 2: The Mystery</h2>
+            <p>
+                In a small village, strange occurrences began to unfold. People started to...
+            </p>
+
+            <!-- Add more stories as needed -->
+        </section>
+
+        <!-- Home and Back Buttons -->
+        <div class="button-container">
+            <a href="index.html" class="button">Home</a> <!-- Home Button -->
+            <button onclick="history.back()" class="button">Go Back</button> <!-- Back Button -->
+        </div>
     </div>
 </body>
 </html>
